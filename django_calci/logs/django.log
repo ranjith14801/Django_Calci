@@ -1,0 +1,963 @@
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 2233
+"GET /login/?next=/ HTTP/1.1" 200 2233
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2915
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2915
+"GET /signup/ HTTP/1.1" 200 2218
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: accounts_customuser
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\django_calci\accounts\views.py", line 13, in signup
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 492, in _post_clean
+    self.validate_unique()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 501, in validate_unique
+    self.instance.validate_unique(exclude=exclude)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1229, in validate_unique
+    errors = self._perform_unique_checks(unique_checks)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1339, in _perform_unique_checks
+    if qs.exists():
+       ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: accounts_customuser
+"POST /signup/ HTTP/1.1" 500 154427
+"GET /signup/ HTTP/1.1" 200 2218
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: accounts_customuser
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\django_calci\accounts\views.py", line 13, in signup
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 492, in _post_clean
+    self.validate_unique()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 501, in validate_unique
+    self.instance.validate_unique(exclude=exclude)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1229, in validate_unique
+    errors = self._perform_unique_checks(unique_checks)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1339, in _perform_unique_checks
+    if qs.exists():
+       ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: accounts_customuser
+"POST /signup/ HTTP/1.1" 500 154433
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: accounts_customuser
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\django_calci\accounts\views.py", line 13, in signup
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 492, in _post_clean
+    self.validate_unique()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 501, in validate_unique
+    self.instance.validate_unique(exclude=exclude)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1229, in validate_unique
+    errors = self._perform_unique_checks(unique_checks)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1339, in _perform_unique_checks
+    if qs.exists():
+       ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: accounts_customuser
+"POST /signup/ HTTP/1.1" 500 154433
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: accounts_customuser
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\django_calci\accounts\views.py", line 13, in signup
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 492, in _post_clean
+    self.validate_unique()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 501, in validate_unique
+    self.instance.validate_unique(exclude=exclude)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1229, in validate_unique
+    errors = self._perform_unique_checks(unique_checks)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1339, in _perform_unique_checks
+    if qs.exists():
+       ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: accounts_customuser
+"POST /signup/ HTTP/1.1" 500 154433
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 2233
+"GET /login/?next=/ HTTP/1.1" 200 2233
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 2233
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3026
+"GET /signup/ HTTP/1.1" 200 2218
+- Broken pipe from ('127.0.0.1', 50682)
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: accounts_customuser
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\django_calci\accounts\views.py", line 13, in signup
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 492, in _post_clean
+    self.validate_unique()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 501, in validate_unique
+    self.instance.validate_unique(exclude=exclude)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1229, in validate_unique
+    errors = self._perform_unique_checks(unique_checks)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1339, in _perform_unique_checks
+    if qs.exists():
+       ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: accounts_customuser
+"POST /signup/ HTTP/1.1" 500 154498
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: accounts_customuser
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\django_calci\accounts\views.py", line 13, in signup
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 492, in _post_clean
+    self.validate_unique()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 501, in validate_unique
+    self.instance.validate_unique(exclude=exclude)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1229, in validate_unique
+    errors = self._perform_unique_checks(unique_checks)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1339, in _perform_unique_checks
+    if qs.exists():
+       ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: accounts_customuser
+"POST /signup/ HTTP/1.1" 500 154498
+E:\django_calculator\django_calci\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 2233
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3026
+"GET /signup/ HTTP/1.1" 200 2218
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: accounts_customuser
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\django_calci\accounts\views.py", line 10, in signup
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 492, in _post_clean
+    self.validate_unique()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 501, in validate_unique
+    self.instance.validate_unique(exclude=exclude)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1229, in validate_unique
+    errors = self._perform_unique_checks(unique_checks)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1339, in _perform_unique_checks
+    if qs.exists():
+       ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: accounts_customuser
+"POST /signup/ HTTP/1.1" 500 154473
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: accounts_customuser
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\django_calci\accounts\views.py", line 10, in signup
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 492, in _post_clean
+    self.validate_unique()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 501, in validate_unique
+    self.instance.validate_unique(exclude=exclude)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1229, in validate_unique
+    errors = self._perform_unique_checks(unique_checks)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1339, in _perform_unique_checks
+    if qs.exists():
+       ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: accounts_customuser
+"POST /signup/ HTTP/1.1" 500 154473
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 2233
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+"GET /signup/ HTTP/1.1" 200 2217
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: accounts_customuser
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\django_calci\accounts\views.py", line 10, in signup
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 492, in _post_clean
+    self.validate_unique()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 501, in validate_unique
+    self.instance.validate_unique(exclude=exclude)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1229, in validate_unique
+    errors = self._perform_unique_checks(unique_checks)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1339, in _perform_unique_checks
+    if qs.exists():
+       ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: accounts_customuser
+"POST /signup/ HTTP/1.1" 500 154473
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 2233
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3026
+"GET /signup/ HTTP/1.1" 200 2217
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: accounts_customuser
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\django_calci\accounts\views.py", line 10, in signup
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 492, in _post_clean
+    self.validate_unique()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 501, in validate_unique
+    self.instance.validate_unique(exclude=exclude)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1229, in validate_unique
+    errors = self._perform_unique_checks(unique_checks)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1339, in _perform_unique_checks
+    if qs.exists():
+       ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: accounts_customuser
+"POST /signup/ HTTP/1.1" 500 154473
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 2233
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+"GET /signup/ HTTP/1.1" 200 2217
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: accounts_customuser
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\django_calci\accounts\views.py", line 10, in signup
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 492, in _post_clean
+    self.validate_unique()
+  File "E:\django_calculator\venv\Lib\site-packages\django\forms\models.py", line 501, in validate_unique
+    self.instance.validate_unique(exclude=exclude)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1229, in validate_unique
+    errors = self._perform_unique_checks(unique_checks)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\base.py", line 1339, in _perform_unique_checks
+    if qs.exists():
+       ^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\django_calculator\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: accounts_customuser
+"POST /signup/ HTTP/1.1" 500 154473
+E:\django_calculator\django_calci\django_calci\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 2157
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3026
+"GET /signup/ HTTP/1.1" 200 2218
+"POST /signup/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 2157
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+"GET /login/ HTTP/1.1" 200 2157
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+"GET /login/ HTTP/1.1" 200 2157
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+"GET /login/ HTTP/1.1" 200 2157
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 2157
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 2154
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3026
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 2154
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3026
+Watching for file changes with StatReloader
+"GET /login/?next=/ HTTP/1.1" 200 2154
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+"GET /login HTTP/1.1" 301 0
+"GET /login/ HTTP/1.1" 200 2154
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+"GET /login/ HTTP/1.1" 200 2154
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+E:\django_calculator\django_calci\accounts\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 2230
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+"POST /login/?next=/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2189
+"POST /calculator/basic/ HTTP/1.1" 200 123
+"POST /calculator/basic/ HTTP/1.1" 200 123
+"POST /calculator/basic/ HTTP/1.1" 200 123
+"POST /calculator/basic/ HTTP/1.1" 200 123
+"POST /calculator/advanced/ HTTP/1.1" 200 123
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2189
+"POST /calculator/basic/ HTTP/1.1" 200 2581
+"POST /calculator/basic/ HTTP/1.1" 200 2595
+"POST /calculator/basic/ HTTP/1.1" 200 2595
+"POST /calculator/basic/ HTTP/1.1" 200 2595
+"GET / HTTP/1.1" 200 2189
+"POST /calculator/advanced/ HTTP/1.1" 200 2508
+"POST /calculator/advanced/ HTTP/1.1" 200 2513
+"GET / HTTP/1.1" 200 2189
+"POST /calculator/submit-feedback/ HTTP/1.1" 200 1657
+"POST /calculator/submit-feedback/ HTTP/1.1" 302 0
+"GET /calculator/feedback/ HTTP/1.1" 200 1236
+"GET / HTTP/1.1" 200 2189
+"GET /signout/ HTTP/1.1" 200 2230
+"GET /static/images/login_image.jpg HTTP/1.1" 404 1926
+"POST /signout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2189
+"GET / HTTP/1.1" 200 2189
+"GET /signout/ HTTP/1.1" 200 2230
+"GET /static/images/login_image.jpg HTTP/1.1" 200 189247
+"GET /signup/ HTTP/1.1" 200 2218
+"GET /signup/ HTTP/1.1" 200 2218
+"GET /signup/ HTTP/1.1" 200 2218
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2192
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3026
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 3716
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+"GET /static/admin/css/base.css HTTP/1.1" 200 21207
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18533
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 6510
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /admin/calci/feedback/ HTTP/1.1" 200 8914
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/core.js HTTP/1.1" 200 5682
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /admin/calci/feedback/1/change/ HTTP/1.1" 200 9343
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/css/forms.css HTTP/1.1" 200 9047
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11900
+"GET /admin/calci/feedback/ HTTP/1.1" 200 8914
+"GET /admin/accounts/customuser/ HTTP/1.1" 200 9196
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/auth/group/ HTTP/1.1" 200 8064
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /admin/accounts/customuser/ HTTP/1.1" 200 9196
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2261
+"GET /static/images/login_image.jpg HTTP/1.1" 304 0
+"GET /admin/accounts/customuser/ HTTP/1.1" 200 9196
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 2230
+"GET /static/images/login_image.jpg HTTP/1.1" 200 189247
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3026
